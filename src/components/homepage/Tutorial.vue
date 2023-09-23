@@ -7,12 +7,14 @@
         <p class="title text-4xl mb-5">Tutorial</p>
         <p class="mb-3 text-justify">
           Webiste memuat link video tutorial yang yang dapat kalian ikuti untuk
-          membuat video motion 2D dengan menggunakan Software Adobe After Effect
-          dan Adobe Animate.
+          membuat video motion 2D dengan menggunakan software
+          <b>Adobe After Effect</b> dan <b>Adobe Animate</b>.
         </p>
         <p class="mb-3 text-justify">
-          Terdapat ... link yang dapat diakses untuk menonton video tutorial
-          membuat Motion 2D dari awal sampai akhir.
+          Terdapat 6 link yang dapat diakses untuk menonton video tutorial
+          membuat Motion 2D mengunakan <b>Adobe After Effect</b> dan 10 link
+          yang dapat diakses untuk menonton video tutorial membuat Motion 2D
+          mengunakan <b>Adobe Animate</b>.
         </p>
         <router-link :to="{ name: 'Tutorial' }">
           <button class="learn-more mt-5 !w-[17rem]">

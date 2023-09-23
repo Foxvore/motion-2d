@@ -17,11 +17,12 @@
       <div>
         <p class="title text-4xl mb-5">Our Project</p>
         <p class="mb-3 text-justify">
-          ......, sebuah video Motion 2D atau Motion Grapic karya kelompok 3
-          yaitu
-          <b>Tri'sta.</b> Video ini menjelaskan tentang penjelasan dasar dan
-          fungsi dari Motion 2D. Video Motion 2D ini dibuat dengan bantuan video
-          tutorial yang mana linknya disimpan di dalam website ini.
+          <b>"What is Motion 2D?"</b> merupakan sebuah video Motion 2D karya
+          kelompok 3 yaitu
+          <b class="text-[var(--primary-color)]">Tri'sta.</b> Video ini
+          menjelaskan tentang penjelasan dasar dan fungsi dari Motion 2D. Video
+          Motion 2D ini dibuat dengan bantuan video tutorial yang mana linknya
+          disimpan di dalam website ini.
         </p>
         <router-link :to="{ name: 'Our Project' }">
           <button class="learn-more mt-5 !w-[14rem]">
