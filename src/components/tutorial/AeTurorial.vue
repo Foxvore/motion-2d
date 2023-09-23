@@ -1,5 +1,5 @@
 <script setup>
-const tutorial = [
+const tutorial_ae = [
   {
     title: "Ternyata Desain Ada Prinsipnya!",
     channel: "Kok Bisa?",
@@ -39,9 +39,13 @@ const tutorial = [
 </script>
 
 <template>
+  <div class="title text-4xl text-center mb-5">
+    Adobe After Effect tutorial by Kok Bisa? (IDN)
+  </div>
+
   <div class="overflow-auto whitespace-nowrap">
     <el-card
-      v-for="item in tutorial"
+      v-for="item in tutorial_ae"
       :key="item"
       class="card mx-2 my-2 inline-block"
     >
