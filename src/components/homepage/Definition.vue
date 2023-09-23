@@ -15,7 +15,7 @@
           Motion 2D mengacu pada pergerakan objek atau elemen dalam dua dimensi.
           Ini melibatkan penggunaan animasi untuk menciptakan ilusi pergerakan
           dan dinamika. Motion 2D digunakan dalam iklan, animasi karakter dalam
-          permainan, dan efek visual dalam film atau video dan maish banyak
+          permainan, dan efek visual dalam film atau video dan masih banyak
           lagi.
         </p>
         <router-link :to="{ name: 'Motion 2D' }">
