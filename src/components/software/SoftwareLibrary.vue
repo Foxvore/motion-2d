@@ -1,25 +1,8 @@
 <script setup>
-import Illustrator from "@/assets/img/software-requirement/ai.png";
 import AfterEffect from "@/assets/img/software-requirement/ae.png";
 import Animiate from "@/assets/img/software-requirement/an.png";
 
 const software = [
-  // {
-  //   logo: Illustrator,
-  //   name: "Adobe Illustration",
-  //   inc: "Adobe Inc.",
-  //   function: "Untuk membuat assets 2D",
-  //   link: "https://www.adobe.com/id_en/products/illustrator.html",
-  //   cpu: "Multicore Intel processor (with 64-bit support) with SSE 4.2 or later or AMD Athlon 64 processor with SSE 4.2 or later.",
-  //   os: "Windows 11 and Windows 10 (64-bit) versions V21H1, and V20H2. Windows Server versions V1607 (2016) and V1809 (2019).",
-  //   ram: "8 GB of RAM (16 GB recommended).",
-  //   hdd: "2 GB of available hard-disk space for installation. Additional free space required during installation. (SSD recommended)",
-  //   monitor:
-  //     "1024 x 768 display (1920 x 1080 recommended). To use Touch workspace in Illustrator, you must have a touch-screen-enabled tablet/monitor running Windows 10 (Microsoft Surface Pro 3 recommended).",
-  //   gpu: "Have a minimum of 1 GB of VRAM (4 GB recommended). Support OpenGL version 4.0 or greater.",
-  //   internet:
-  //     "Internet connection and registration are necessary for required software activation, validation of subscriptions, and access toonline services.",
-  // },
   {
     logo: AfterEffect,
     name: "Adobe After Effect",
