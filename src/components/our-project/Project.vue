@@ -2,27 +2,59 @@
 
 <template>
   <p class="title text-4xl mb-5 text-center">Our Project</p>
-  <div class="flex justify-center">
-    <div class="card">
-      <div class="card-image">
-        <iframe
-          class="rounded-md"
-          width="800"
-          height="450"
-          src="https://www.youtube.com/embed/U2anTtDa03c?si=aIy4fk2E4lb0wB60"
-          title="What is Motion 2D? - Tri'sta Project"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        />
+
+  <div class="grid grid-cols-2">
+    <div>
+      <div class="flex justify-center">
+        <div class="card">
+          <div class="card-image">
+            <iframe
+              class="rounded-md"
+              width="680"
+              height="380"
+              src="https://www.youtube.com/embed/U2anTtDa03c?si=aIy4fk2E4lb0wB60"
+              title="Youtube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            />
+          </div>
+          <div class="category">
+            <button class="button">Motion 2D Video</button>
+          </div>
+          <div class="heading">
+            What is Motion 2D?
+            <div class="author">
+              By <span class="name">Tri'sta</span> - 30 Desember 2023
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="category">
-        <button class="button">Motion 2D Video</button>
-      </div>
-      <div class="heading">
-        What is Motion 2D?
-        <div class="author">
-          By <span class="name">Tri'sta</span> - 30 Desember 2023
+    </div>
+    <div>
+      <div class="flex justify-center">
+        <div class="card">
+          <div class="card-image">
+            <iframe
+              class="rounded-md"
+              width="680"
+              height="380"
+              src="https://www.youtube.com/embed/U2anTtDa03c?si=aIy4fk2E4lb0wB60"
+              title="Youtube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            />
+          </div>
+          <div class="category">
+            <button class="button">Motion 2D Video</button>
+          </div>
+          <div class="heading">
+            What is Motion 2D?
+            <div class="author">
+              By <span class="name">Tri'sta</span> - 30 Desember 2023
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -41,8 +73,7 @@
 
 .card-image {
   background-color: rgb(236, 236, 236);
-  width: 100%;
-  height: 100%;
+
   border-radius: 6px;
 }
 
