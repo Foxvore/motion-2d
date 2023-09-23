@@ -28,6 +28,7 @@
   height: 100vh;
   background: url("@/assets/img/thumbnail.png") top center;
   background-attachment: fixed;
+  background-position: center;
   background-size: cover;
   position: relative;
   box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.5);
