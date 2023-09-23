@@ -1,38 +1,4 @@
-<script setup>
-import GedungCC from "@/assets/img/carousel/gedung-cc.jpg";
-import Ampliteater from "@/assets/img/carousel/ampliteater.jpg";
-import GedungZeta from "@/assets/img/carousel/gedung-zeta.jpg";
-import TamanKoin from "@/assets/img/carousel/taman-koin.jpg";
-import Lobby from "@/assets/img/carousel/lobby.jpg";
-import Gazebo from "@/assets/img/carousel/gazebo.jpg";
-
-const carousel_data = [
-  {
-    name: "Geudng CC",
-    img: GedungCC,
-  },
-  {
-    name: "Geudng CC",
-    img: Ampliteater,
-  },
-  {
-    name: "Geudng CC",
-    img: GedungZeta,
-  },
-  {
-    name: "Geudng CC",
-    img: TamanKoin,
-  },
-  {
-    name: "Geudng CC",
-    img: Lobby,
-  },
-  {
-    name: "Geudng CC",
-    img: Gazebo,
-  },
-];
-</script>
+<script setup></script>
 
 <template>
   <div class="img-background">
