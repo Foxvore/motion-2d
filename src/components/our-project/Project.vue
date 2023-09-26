@@ -20,12 +20,24 @@
             />
           </div>
           <div class="category">
-            <button class="button">Motion 2D Video</button>
+            <button
+              class="button text-[var(--primary-color)] bg-white mr-1 hover:bg-[var(--primary-color)] hover:text-white"
+            >
+              Motion 2D Video
+            </button>
+            <button
+              class="button text-[#ff0000] bg-white hover:bg-[#ff0000] hover:text-white"
+            >
+              <div class="flex items-center">
+                <i class="fa-brands fa-youtube mr-1"></i>
+                <p class="ml-1">Watch on Youtube</p>
+              </div>
+            </button>
           </div>
           <div class="heading">
             What is Motion 2D?
             <div class="author">
-              By <span class="name">Tri'sta</span> - 30 Desember 2023
+              By <span class="name">Tri'sta</span> - 27 September 2023
             </div>
           </div>
         </div>
@@ -47,12 +59,16 @@
             />
           </div>
           <div class="category">
-            <button class="button">Motion 2D Video</button>
+            <button
+              class="button text-[var(--primary-color)] bg-white mr-1 hover:bg-[var(--primary-color)] hover:text-white"
+            >
+              PowerPoint Presentation
+            </button>
           </div>
           <div class="heading">
             What is Motion 2D?
             <div class="author">
-              By <span class="name">Tri'sta</span> - 30 Desember 2023
+              By <span class="name">Tri'sta</span> - 27 September 2023
             </div>
           </div>
         </div>
@@ -73,7 +89,6 @@
 
 .card-image {
   background-color: rgb(236, 236, 236);
-
   border-radius: 6px;
 }
 
@@ -84,8 +99,6 @@
 }
 
 .category .button {
-  background: white;
-  color: var(--primary-color);
   font-size: 0.8em;
   font-weight: 800;
   border: none;
@@ -93,11 +106,6 @@
   padding: 0.4rem 0.6rem;
   box-shadow: rgba(165, 132, 130, 0.1333333333) 0px 5px 5px 0px;
   transition: var(--tran-03);
-}
-
-.category .button:hover {
-  background: var(--primary-color);
-  color: white;
 }
 
 .heading {
