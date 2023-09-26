@@ -86,6 +86,10 @@ const tutorial_an = [
     desc: "Mengexport dan mempublish project",
   },
 ];
+
+const openYt = (link) => {
+  window.open(link);
+};
 </script>
 
 <template>
@@ -113,6 +117,7 @@ const tutorial_an = [
       </div>
       <div
         class="btn-yt p-5 mt-2 h-10 w-full bg-[#00005d] flex justify-center items-center rounded-md"
+        @click="openYt(item.link)"
       >
         <i class="fa-brands fa-youtube text-white mr-1 text-lg"></i>
         <p class="ml-1 text-white">Watch on Youtube</p>

@@ -12,8 +12,8 @@ const tutorial_ae = [
     title:
       "Bikin Gambarmu Hidup! Bagian 1: Tutorial Transform di Adobe After Effects",
     channel: "Kok Bisa?",
-    embed_link: "https://www.youtube.com/embed/QcZpWKaqzu4?si=UDvDaDfCqQ_WhJnE",
-    share_link: "https://youtu.be/QcZpWKaqzu4?si=UDvDaDfCqQ_WhJnE",
+    embed_link: "https://www.youtube.com/embed/Vk_HOJez870?si=b7xpZtnFwLAvA0AK",
+    share_link: "https://youtu.be/Vk_HOJez870?si=b7xpZtnFwLAvA0AK",
     date: "2 Desember 2022",
     desc: "Memberikan gerakan dengan fitur Transform",
   },
@@ -52,6 +52,10 @@ const tutorial_ae = [
     desc: "Cara render project yang telah kalian buat di Adobe After Effect",
   },
 ];
+
+const openYt = (link) => {
+  window.open(link);
+};
 </script>
 
 <template>
@@ -79,6 +83,7 @@ const tutorial_ae = [
       </div>
       <div
         class="btn-yt p-5 mt-2 h-10 w-full bg-[#cf5959] flex justify-center items-center rounded-md"
+        @click="openYt(item.share_link)"
       >
         <i class="fa-brands fa-youtube text-white mr-1 text-lg"></i>
         <p class="ml-1 text-white">Watch on Youtube</p>
