@@ -28,7 +28,7 @@ const card = defineProps(["title", "subtitle"]);
 .img-background {
   width: 100%;
   height: 50vh;
-  background: url("@/assets/img/thumbnail.png") top center;
+  background: url("@/assets/gif/header/Space_Idle.gif") top center;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
