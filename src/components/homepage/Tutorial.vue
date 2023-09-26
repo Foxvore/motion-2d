@@ -28,7 +28,7 @@
     </div>
     <div class="flex justify-center items-center">
       <img
-        src="@/assets/giv/homepage/tutorial.gif"
+        src="@/assets/gif/homepage/tutorial.gif"
         alt="def.giv"
         class="w-[300px] h-[300px]"
       />
