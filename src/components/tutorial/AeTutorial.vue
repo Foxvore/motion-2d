@@ -6,7 +6,7 @@ const tutorial_ae = [
     embed_link: "https://www.youtube.com/embed/QcZpWKaqzu4?si=UDvDaDfCqQ_WhJnE",
     share_link: "https://youtu.be/QcZpWKaqzu4?si=UDvDaDfCqQ_WhJnE",
     date: "23 November 2022",
-    desc: "Mengenali software untuk membuat motion 2D Adobe After Effect",
+    desc: "Mengenali software untuk membuat motion 2D yaitu Adobe After Effect",
   },
   {
     title:
@@ -27,12 +27,21 @@ const tutorial_ae = [
     desc: "Menggunakan fitur Puppet & Path",
   },
   {
+    title:
+      "Bikin Gambarmu hidup! Bagian 3, tutorial fungsi script di Adobe After Effects",
+    channel: "Kok Bisa?",
+    embed_link: "https://www.youtube.com/embed/IuWgX1RaiMg?si=FSCbY9az7ODNYrui",
+    share_link: "https://youtu.be/IuWgX1RaiMg?si=FSCbY9az7ODNYrui",
+    date: "7 Desember 2022",
+    desc: "Fungsi fitur Script di Adobe After Effect",
+  },
+  {
     title: "Tips & Trik di Adobe After Effect",
     channel: "Kok Bisa?",
     embed_link: "https://www.youtube.com/embed/4On-9EIx1e8?si=VDa9RAV5CsEj0YEa",
     share_link: "https://youtu.be/4On-9EIx1e8?si=VDa9RAV5CsEj0YEa",
     date: "9 Desember 2022",
-    desc: "Tips & Trik yang dapat kalian ikuti di Adobe After Effect",
+    desc: "Tips & Trik yang dapat kalian ikuti saat menggunakan Adobe After Effect",
   },
   {
     title: "Cara render di Adobe After Effect",
@@ -68,6 +77,12 @@ const tutorial_ae = [
           allowfullscreen
         />
       </div>
+      <div
+        class="btn-yt p-5 mt-2 h-10 w-full bg-[#cf5959] flex justify-center items-center rounded-md"
+      >
+        <i class="fa-brands fa-youtube text-white mr-1 text-lg"></i>
+        <p class="ml-1 text-white">Watch on Youtube</p>
+      </div>
       <div class="mt-4 whitespace-normal">
         <div class="mb-1">
           <p class="text-gray-400 text-xs">Title</p>
@@ -100,7 +115,16 @@ const tutorial_ae = [
 
 <style scoped>
 .el-card:hover {
-  scale: 1.02;
+  scale: 1.015;
+}
+
+.btn-yt {
+  transition: var(--tran-03);
+}
+
+.btn-yt:hover {
+  scale: 1.015;
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar {

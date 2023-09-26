@@ -111,6 +111,12 @@ const tutorial_an = [
           allowfullscreen
         />
       </div>
+      <div
+        class="btn-yt p-5 mt-2 h-10 w-full bg-[#00005d] flex justify-center items-center rounded-md"
+      >
+        <i class="fa-brands fa-youtube text-white mr-1 text-lg"></i>
+        <p class="ml-1 text-white">Watch on Youtube</p>
+      </div>
       <div class="mt-4 whitespace-normal">
         <div class="mb-1">
           <p class="text-gray-400 text-xs">Title</p>
@@ -143,7 +149,16 @@ const tutorial_an = [
 
 <style scoped>
 .el-card:hover {
-  scale: 1.02;
+  scale: 1.015;
+}
+
+.btn-yt {
+  transition: var(--tran-03);
+}
+
+.btn-yt:hover {
+  scale: 1.015;
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar {
