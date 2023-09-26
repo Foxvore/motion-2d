@@ -8,14 +8,14 @@ onMounted(() => {
 const scroll = () => {
   document.addEventListener("scroll", () => {
     const navbar = document.querySelector(".navbar");
-    if (window.scrollY > 150) {
+    if (window.scrollY > 100) {
       navbar.classList.add("navbar-scrolled");
     } else {
       navbar.classList.remove("navbar-scrolled");
     }
 
     const top = document.querySelector(".back-to-top");
-    if (window.scrollY > 150) {
+    if (window.scrollY > 100) {
       top.classList.add("active");
     } else {
       top.classList.remove("active");
@@ -32,35 +32,35 @@ const scroll = () => {
     <div>
       <ul class="flex text-[1.1rem]">
         <li class="mx-[20px]">
-          <button>
+          <button class="btn-router">
             <router-link :to="{ name: 'Homepage' }" class="tracking-wide">
               Homepage
             </router-link>
           </button>
         </li>
         <li class="mx-[20px]">
-          <button>
+          <button class="btn-router">
             <router-link :to="{ name: 'Motion 2D' }" class="tracking-wide">
               What is Motion 2D?
             </router-link>
           </button>
         </li>
         <li class="mx-[20px]">
-          <button>
+          <button class="btn-router">
             <router-link :to="{ name: 'Software' }" class="tracking-wide">
               Software
             </router-link>
           </button>
         </li>
         <li class="mx-[20px]">
-          <button>
+          <button class="btn-router">
             <router-link :to="{ name: 'Tutorial' }" class="tracking-wide">
               Tutorial
             </router-link>
           </button>
         </li>
         <li class="mx-[20px]">
-          <button>
+          <button class="btn-router">
             <router-link :to="{ name: 'Our Project' }" class="tracking-wide">
               Our Project
             </router-link>
@@ -90,27 +90,31 @@ const scroll = () => {
   backdrop-filter: blur(5px);
 }
 
-button {
+.btn-router {
   position: relative;
-  cursor: pointer;
+  cursor: pointer !important;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: color;
 }
 
+.btn-router li {
+  cursor: pointer;
+}
+
 a.active,
-button:hover {
+.btn-router:hover {
   color: var(--tertiary-color);
 }
 
 a.active:after,
-button:hover:after {
+.btn-router:hover:after {
   width: 100%;
   left: 0%;
 }
 
 a:after,
-button:after {
+.btn-router:after {
   content: "";
   pointer-events: none;
   bottom: -2px;
