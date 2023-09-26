@@ -1,67 +1,117 @@
 <script setup>
 const tutorial_an = [
   {
-    title: "Ternyata Desain Ada Prinsipnya!",
-    channel: "Kok Bisa?",
-    link: "https://www.youtube.com/embed/lWAWSvVp5pI?si=YUgdHH3AHlqI9In6",
-    date: "28 Oktober 2022",
-    desc: "Belajar prinsip sebuah design",
+    title:
+      "Adobe Animate 2021: Planning & Generating Ideas [#0] | Beginners Tutorial",
+    channel: "TipTut",
+    embed_link: "https://www.youtube.com/embed/6PNaj2s2LoY?si=-o1gFrIWO-QmRzez",
+    share_link: "https://youtu.be/6PNaj2s2LoY?si=4eM36NXiBbV3Tv5j",
+    date: "7 Desember 2020",
+    desc: "Membuat perencanaan dan menyusun ide",
   },
   {
-    title: "Ternyata Desain Ada Prinsipnya!",
-    channel: "Kok Bisa?",
-    link: "https://www.youtube.com/embed/lWAWSvVp5pI?si=YUgdHH3AHlqI9In6",
-    date: "28 Oktober 2022",
-    desc: "Belajar prinsip sebuah design",
+    title: "Adobe Animate 2021: The Absolute Basics [#1] | Beginners Tutorial",
+    channel: "TipTut",
+    embed_link: "https://www.youtube.com/embed/E-doxha22QI?si=MXw4nkaDS2Zuw7XO",
+    share_link: "https://youtu.be/E-doxha22QI?si=MXw4nkaDS2Zuw7XO",
+    date: "10 Desember 2020",
+    desc: "Belajar basic Adobe Animate",
   },
   {
-    title: "Ternyata Desain Ada Prinsipnya!",
-    channel: "Kok Bisa?",
-    link: "https://www.youtube.com/embed/lWAWSvVp5pI?si=YUgdHH3AHlqI9In6",
-    date: "28 Oktober 2022",
-    desc: "Belajar prinsip sebuah design",
+    title:
+      "Adobe Animate 2021: Frame by Frame Animation [#2] | Beginners Tutorial",
+    channel: "TipTut",
+    embed_link: "https://www.youtube.com/embed/Ub4jHJRleUc?si=C_F-3SPrc5BNkpdU",
+    share_link: "https://youtu.be/Ub4jHJRleUc?si=C_F-3SPrc5BNkpdU",
+    date: "14 Desember 2020",
+    desc: "Memberikan animasi ke setiap frame",
   },
   {
-    title: "Ternyata Desain Ada Prinsipnya!",
-    channel: "Kok Bisa?",
-    link: "https://www.youtube.com/embed/lWAWSvVp5pI?si=YUgdHH3AHlqI9In6",
-    date: "28 Oktober 2022",
-    desc: "Belajar prinsip sebuah design",
+    title: "Adobe Animate 2021: Symbols and Tweens [#3] | Beginners Tutorial",
+    channel: "TipTut",
+    embed_link: "https://www.youtube.com/embed/UlYlcygiJUs?si=zmJTykbBpf-Vyvxs",
+    share_link: "https://youtu.be/UlYlcygiJUs?si=zmJTykbBpf-Vyvxs",
+    date: "17 Desember 2020",
+    desc: "Belajar Symbols dan Tweens untuk animasi",
   },
   {
-    title: "Ternyata Desain Ada Prinsipnya!",
-    channel: "Kok Bisa?",
-    link: "https://www.youtube.com/embed/lWAWSvVp5pI?si=YUgdHH3AHlqI9In6",
-    date: "28 Oktober 2022",
-    desc: "Belajar prinsip sebuah design",
+    title:
+      "Adobe Animate 2021: Colour, Gradients and Effects [#4] | Beginners Tutorial",
+    channel: "TipTut",
+    embed_link: "https://www.youtube.com/embed/cLYMek__i5I?si=qsbGLHtQp1HVGW4M",
+    share_link: "https://youtu.be/cLYMek__i5I?si=qsbGLHtQp1HVGW4M",
+    date: "21 Desember 2020",
+    desc: "Belajar Warna, gradasi, dan efek animasi",
+  },
+  {
+    title: "Adobe Animate 2021: Shape Morphing [#5] | Beginners Tutorial",
+    channel: "TipTut",
+    embed_link: "https://www.youtube.com/embed/X7aUCjVpu34?si=Vm_Z9QFcghbr5HOg",
+    share_link: "https://youtu.be/X7aUCjVpu34?si=Vm_Z9QFcghbr5HOg",
+    date: "24 Desember 2020",
+    desc: "Menganimasikan perubahan bentuk",
+  },
+  {
+    title: "Adobe Animate 2021: Shape Rigging [#6] | Beginners Tutorial",
+    channel: "TipTut",
+    embed_link: "https://www.youtube.com/embed/AXtKYTXbJUc?si=DURb4Bdwo0HvbaEe",
+    share_link: "https://youtu.be/AXtKYTXbJUc?si=DURb4Bdwo0HvbaEe",
+    date: "28 Desember 2020",
+    desc: "Membuat kerangka untuk aset",
+  },
+  {
+    title: "Adobe Animate 2021: Working With Sound [#7] | Beginners Tutorial",
+    channel: "TipTut",
+    embed_link: "https://www.youtube.com/embed/yXM6naQ-m3g?si=DeljDUhVx94Y_XKc",
+    share_link: "https://youtu.be/yXM6naQ-m3g?si=DeljDUhVx94Y_XKc",
+    date: "31 Desember 2020",
+    desc: "Memberikan suara pada animasi",
+  },
+  {
+    title:
+      "Adobe Animate 2021: Cameras and Parallaxing [#8] | Beginners Tutorial",
+    channel: "TipTut",
+    embed_link: "https://www.youtube.com/embed/e_71HEz0Wio?si=aqQ2TVizFylgpaL1",
+    share_link: "https://youtu.be/e_71HEz0Wio?si=aqQ2TVizFylgpaL1",
+    date: "1 Januari 2021",
+    desc: "Menggerakan kamera & efek paralax",
+  },
+  {
+    title:
+      "Adobe Animate 2021: Exporting/Publishing Options [#9 FINALE] | Beginners Tutorial",
+    channel: "TipTut",
+    embed_link: "https://www.youtube.com/embed/yTPaeIaQtw8?si=lIf98BIQdmeIgQdm",
+    share_link: "https://youtu.be/yTPaeIaQtw8?si=lIf98BIQdmeIgQdm",
+    date: "1 Januari 2021",
+    desc: "Mengexport dan mempublish project",
   },
 ];
 </script>
 
 <template>
   <div class="title text-4xl text-center mb-5">
-    Adobe After Effect tutorial by TipTut (ENG)
+    Adobe Animate tutorial by TipTut (ENG)
   </div>
 
   <div class="overflow-auto whitespace-nowrap">
     <el-card
       v-for="item in tutorial_an"
       :key="item"
-      class="card mx-2 my-2 inline-block"
+      class="el-card mx-2 my-2 inline-block w-[380px]"
     >
       <div class="flex justify-center">
         <iframe
           class="rounded-md"
-          width="280"
-          height="157"
-          :src="item.link"
+          width="340"
+          height="190"
+          :src="item.embed_link"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
-        ></iframe>
+        />
       </div>
-      <div class="mt-4">
+      <div class="mt-4 whitespace-normal">
         <div class="mb-1">
           <p class="text-gray-400 text-xs">Title</p>
           <p class="font-bold text-base">
@@ -92,7 +142,7 @@ const tutorial_an = [
 </template>
 
 <style scoped>
-.card:hover {
+.el-card:hover {
   scale: 1.02;
 }
 

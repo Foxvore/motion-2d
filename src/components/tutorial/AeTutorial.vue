@@ -1,39 +1,46 @@
 <script setup>
 const tutorial_ae = [
   {
-    title: "Ternyata Desain Ada Prinsipnya!",
+    title: "Berkenalan dengan Adobe After Effect",
     channel: "Kok Bisa?",
-    link: "https://www.youtube.com/embed/lWAWSvVp5pI?si=YUgdHH3AHlqI9In6",
-    date: "28 Oktober 2022",
-    desc: "Belajar prinsip sebuah design",
+    embed_link: "https://www.youtube.com/embed/QcZpWKaqzu4?si=UDvDaDfCqQ_WhJnE",
+    share_link: "https://youtu.be/QcZpWKaqzu4?si=UDvDaDfCqQ_WhJnE",
+    date: "23 November 2022",
+    desc: "Mengenali software untuk membuat motion 2D Adobe After Effect",
   },
   {
-    title: "Ternyata Desain Ada Prinsipnya!",
+    title:
+      "Bikin Gambarmu Hidup! Bagian 1: Tutorial Transform di Adobe After Effects",
     channel: "Kok Bisa?",
-    link: "https://www.youtube.com/embed/lWAWSvVp5pI?si=YUgdHH3AHlqI9In6",
-    date: "28 Oktober 2022",
-    desc: "Belajar prinsip sebuah design",
+    embed_link: "https://www.youtube.com/embed/QcZpWKaqzu4?si=UDvDaDfCqQ_WhJnE",
+    share_link: "https://youtu.be/QcZpWKaqzu4?si=UDvDaDfCqQ_WhJnE",
+    date: "2 Desember 2022",
+    desc: "Memberikan gerakan dengan fitur Transform",
   },
   {
-    title: "Ternyata Desain Ada Prinsipnya!",
+    title:
+      "Bikin Gambarmu Hidup! Bagian 2, Tutorial Puppet & Path di Adobe After Effects",
     channel: "Kok Bisa?",
-    link: "https://www.youtube.com/embed/lWAWSvVp5pI?si=YUgdHH3AHlqI9In6",
-    date: "28 Oktober 2022",
-    desc: "Belajar prinsip sebuah design",
+    embed_link: "https://www.youtube.com/embed/xUKNbX00_Q8?si=WU8OEuAGOMp9UkbP",
+    share_link: "https://youtu.be/xUKNbX00_Q8?si=WU8OEuAGOMp9UkbP",
+    date: "7 Desember 2022",
+    desc: "Menggunakan fitur Puppet & Path",
   },
   {
-    title: "Ternyata Desain Ada Prinsipnya!",
+    title: "Tips & Trik di Adobe After Effect",
     channel: "Kok Bisa?",
-    link: "https://www.youtube.com/embed/lWAWSvVp5pI?si=YUgdHH3AHlqI9In6",
-    date: "28 Oktober 2022",
-    desc: "Belajar prinsip sebuah design",
+    embed_link: "https://www.youtube.com/embed/4On-9EIx1e8?si=VDa9RAV5CsEj0YEa",
+    share_link: "https://youtu.be/4On-9EIx1e8?si=VDa9RAV5CsEj0YEa",
+    date: "9 Desember 2022",
+    desc: "Tips & Trik yang dapat kalian ikuti di Adobe After Effect",
   },
   {
-    title: "Ternyata Desain Ada Prinsipnya!",
+    title: "Cara render di Adobe After Effect",
     channel: "Kok Bisa?",
-    link: "https://www.youtube.com/embed/lWAWSvVp5pI?si=YUgdHH3AHlqI9In6",
-    date: "28 Oktober 2022",
-    desc: "Belajar prinsip sebuah design",
+    embed_link: "https://www.youtube.com/embed/HVB-ZYO8qSk?si=VHFyxdZSc24nAxY_",
+    share_link: "https://youtu.be/HVB-ZYO8qSk?si=VHFyxdZSc24nAxY_",
+    date: "9 Desember 2022",
+    desc: "Cara render project yang telah kalian buat di Adobe After Effect",
   },
 ];
 </script>
@@ -47,21 +54,21 @@ const tutorial_ae = [
     <el-card
       v-for="item in tutorial_ae"
       :key="item"
-      class="card mx-2 my-2 inline-block"
+      class="el-card mx-2 my-2 inline-block w-[380px]"
     >
       <div class="flex justify-center">
         <iframe
           class="rounded-md"
-          width="280"
-          height="157"
-          :src="item.link"
+          width="340"
+          height="190"
+          :src="item.embed_link"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
-        ></iframe>
+        />
       </div>
-      <div class="mt-4">
+      <div class="mt-4 whitespace-normal">
         <div class="mb-1">
           <p class="text-gray-400 text-xs">Title</p>
           <p class="font-bold text-base">
@@ -92,7 +99,7 @@ const tutorial_ae = [
 </template>
 
 <style scoped>
-.card:hover {
+.el-card:hover {
   scale: 1.02;
 }
 
