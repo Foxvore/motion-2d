@@ -33,7 +33,7 @@ const transisi = [
   {
     example: Rotate,
     name: "Rotate",
-    desc: ": Aset dapat berputar untuk mengubah transisi dari satu elemen ke elemen lainnya. Ini sering digunakan untuk memberikan efek perubahan sudut pandang.",
+    desc: "Aset dapat berputar untuk mengubah transisi dari satu elemen ke elemen lainnya. Ini sering digunakan untuk memberikan efek perubahan sudut pandang.",
   },
   {
     example: Flip,
@@ -68,7 +68,7 @@ const transisi = [
       <div
         class="w-full h-[250px] rounded-md mb-3 flex justify-center items-center"
       >
-        <img :src="item.example" alt="" />
+        <img :src="item.example" alt="transisi_example" class="rounded-md" />
       </div>
       <p class="title text-2xl text-center">{{ item.name }}</p>
       <p class="text-justify p-3">{{ item.desc }}</p>
