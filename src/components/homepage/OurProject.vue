@@ -6,7 +6,7 @@
       <div class="flex justify-start items-center pr-32">
         <div class="card" style="--rating: 90">
           <img
-            src="@/assets/img/thumbnail.png"
+            src="@/assets/img/project/vid_thumbnail.png"
             alt=""
             class="w-full rounded-lg"
           />
@@ -19,10 +19,8 @@
         <p class="mb-3 text-justify">
           <b>"What is Motion 2D?"</b> merupakan sebuah video Motion 2D karya
           kelompok 3 yaitu
-          <b class="text-[var(--primary-color)]">Tri'sta.</b> Video ini
-          menjelaskan tentang penjelasan dasar dan fungsi dari Motion 2D. Video
-          Motion 2D ini dibuat dengan bantuan video tutorial yang mana linknya
-          disimpan di dalam website ini.
+          <b class="text-[var(--primary-color)]">Tri'sta.</b> Video ini berisi
+          tentang penjelasan, fungsi, dan contoh penggunaan dari Motion 2D.
         </p>
         <router-link :to="{ name: 'Our Project' }">
           <button class="learn-more mt-5 !w-[14rem]">
