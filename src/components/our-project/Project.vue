@@ -1,4 +1,20 @@
-<script setup></script>
+<script setup>
+const openVid = () => {
+  window.open(
+    "https://drive.google.com/file/d/12aLlfnFk7sfAaZFWtj9UQGiWRxa-Ofaa/view?usp=drive_link"
+  );
+};
+
+const openYT = () => {
+  window.open("https://youtu.be/Tbo-ivOuBU0?si=s-Fhq8UDX3nG3RTw");
+};
+
+const openPPT = () => {
+  window.open(
+    "https://docs.google.com/presentation/d/1kV0fpSiTAkEIkBXgdWfj4fS949MW5xrc/edit?usp=drive_link&ouid=101544503794689559568&rtpof=true&sd=true"
+  );
+};
+</script>
 
 <template>
   <p class="title text-4xl mb-5 text-center">Our Project</p>
@@ -12,8 +28,8 @@
               class="rounded-md"
               width="680"
               height="380"
-              src="https://www.youtube.com/embed/U2anTtDa03c?si=aIy4fk2E4lb0wB60"
-              title="Youtube video player"
+              src="https://www.youtube.com/embed/Tbo-ivOuBU0?si=-PAybRnHp-bWZQO-"
+              title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
@@ -22,11 +38,13 @@
           <div class="category">
             <button
               class="button text-[var(--primary-color)] bg-white mr-1 hover:bg-[var(--primary-color)] hover:text-white"
+              @click="openVid"
             >
               Motion 2D Video
             </button>
             <button
               class="button text-[#ff0000] bg-white hover:bg-[#ff0000] hover:text-white"
+              @click="openYT"
             >
               <div class="flex items-center">
                 <i class="fa-brands fa-youtube mr-1"></i>
@@ -47,20 +65,16 @@
       <div class="flex justify-center">
         <div class="card">
           <div class="card-image">
-            <iframe
-              class="rounded-md"
-              width="680"
-              height="380"
-              src="https://www.youtube.com/embed/U2anTtDa03c?si=aIy4fk2E4lb0wB60"
-              title="Youtube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
+            <img
+              src="@/assets/img/project/ppt_thumbnail.png"
+              alt="PPT Thumbnail"
+              class="w-[680px] h-[380px] rounded-md"
             />
           </div>
           <div class="category">
             <button
               class="button text-[var(--primary-color)] bg-white mr-1 hover:bg-[var(--primary-color)] hover:text-white"
+              @click="openPPT"
             >
               PowerPoint Presentation
             </button>
