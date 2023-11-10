@@ -10,3 +10,11 @@
     </div>
   </footer>
 </template>
+
+<style scoped>
+@media (max-width: 600px) {
+  .text-sm {
+    font-size: 10px;
+  }
+}
+</style>

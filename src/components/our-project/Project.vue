@@ -1,10 +1,4 @@
 <script setup>
-const openVid = () => {
-  window.open(
-    "https://drive.google.com/file/d/12aLlfnFk7sfAaZFWtj9UQGiWRxa-Ofaa/view?usp=drive_link"
-  );
-};
-
 const openYT = () => {
   window.open("https://youtu.be/Tbo-ivOuBU0?si=s-Fhq8UDX3nG3RTw");
 };
@@ -19,15 +13,13 @@ const openPPT = () => {
 <template>
   <p class="title text-4xl mb-5 text-center">Our Project</p>
 
-  <div class="grid grid-cols-2">
+  <div class="product-grid">
     <div>
       <div class="flex justify-center">
         <div class="card">
           <div class="card-image">
             <iframe
-              class="rounded-md"
-              width="680"
-              height="380"
+              class="rounded-md aspect-video w-full"
               src="https://www.youtube.com/embed/Tbo-ivOuBU0?si=-PAybRnHp-bWZQO-"
               title="YouTube video player"
               frameborder="0"
@@ -36,12 +28,6 @@ const openPPT = () => {
             />
           </div>
           <div class="category">
-            <button
-              class="button text-[var(--primary-color)] bg-white mr-1 hover:bg-[var(--primary-color)] hover:text-white"
-              @click="openVid"
-            >
-              Motion 2D Video
-            </button>
             <button
               class="button text-[#ff0000] bg-white hover:bg-[#ff0000] hover:text-white"
               @click="openYT"
@@ -68,7 +54,7 @@ const openPPT = () => {
             <img
               src="@/assets/img/project/ppt_thumbnail.png"
               alt="PPT Thumbnail"
-              class="w-[680px] h-[380px] rounded-md"
+              class="aspect-video w-full rounded-md"
             />
           </div>
           <div class="category">
@@ -92,8 +78,14 @@ const openPPT = () => {
 </template>
 
 <style scoped>
+.product-grid {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
 .card {
-  width: auto;
+  width: 100%;
   height: 100%;
   background: var(--secondary-color);
   padding: 0.4em;
@@ -143,5 +135,21 @@ const openPPT = () => {
 
 .name:hover {
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .heading {
+    font-size: 1rem;
+  }
+
+  .category .button {
+    font-size: 0.6rem;
+    padding: 0.3rem 0.5rem;
+  }
+
+  .author {
+    padding-top: 4px;
+    font-size: 8px;
+  }
 }
 </style>

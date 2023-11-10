@@ -14,19 +14,19 @@ onMounted(() => {
     <HalfHeader title="Our Project" subtitle="and Tri'sta Members" />
   </section>
 
-  <section id="our-team" class="px-[120px] h-auto">
+  <!-- <section id="our-team" class="px-[10vw] h-auto">
     <Team />
   </section>
 
-  <div class="px-[70px]">
+  <div class="px-[5vw]">
     <hr />
-  </div>
+  </div> -->
 
-  <section id="our-team" class="px-[120px] my-[50px] h-auto">
+  <section id="our-team" class="px-[10vw] py-[8vh] h-auto">
     <Project />
   </section>
 
-  <div class="px-[70px]">
+  <div class="px-[5vw]">
     <hr />
   </div>
 </template>

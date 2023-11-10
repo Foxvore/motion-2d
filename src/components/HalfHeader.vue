@@ -38,4 +38,14 @@ const card = defineProps(["title", "subtitle"]);
 .carousel {
   font-family: "Bebas Neue", sans-serif !important;
 }
+
+@media (max-width: 600px) {
+  .text-9xl {
+    font-size: 4rem;
+  }
+
+  .text-3xl {
+    font-size: 1rem;
+  }
+}
 </style>

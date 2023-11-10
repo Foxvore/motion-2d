@@ -3,8 +3,9 @@
 <template>
   <div class="img-background">
     <div
-      class="carousel absolute flex h-screen w-full items-center justify-center z-40"
+      class="header absolute flex h-screen w-full items-center justify-center"
     >
+      <div class="absolute h-screen w-full bg-black opacity-50 z-5" />
       <div>
         <p
           class="text-9xl text-white text-center font-bold drop-shadow-lg tracking-widest"
@@ -18,7 +19,6 @@
         </p>
       </div>
     </div>
-    <div class="absolute h-screen w-full bg-black opacity-50 z-10" />
   </div>
 </template>
 
@@ -34,7 +34,17 @@
   box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.5);
 }
 
-.carousel {
+.header {
   font-family: "Bebas Neue", sans-serif !important;
+}
+
+@media (max-width: 600px) {
+  .text-9xl {
+    font-size: 4rem;
+  }
+
+  .text-3xl {
+    font-size: 1.3rem;
+  }
 }
 </style>
