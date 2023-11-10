@@ -57,4 +57,8 @@ body {
 .title {
   font-family: "Bebas Neue", sans-serif !important;
 }
+
+.hidden {
+  display: none;
+}
 </style>
