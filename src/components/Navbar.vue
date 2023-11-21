@@ -183,16 +183,6 @@ const toggle_mobile = () => {
   color: #fff;
 }
 
-@media (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
-    left: -90%;
-  }
-
-  .navbar .dropdown .dropdown:hover > ul {
-    left: -100%;
-  }
-}
-
 /* Mobile Navigation */
 .mobile-nav-toggle {
   color: #fff;
@@ -215,7 +205,7 @@ const toggle_mobile = () => {
 
 .navbar-mobile {
   position: fixed;
-  overflow: hidden;
+  overflow-y: hidden !important;
   top: 0;
   right: 0;
   left: 0;
@@ -246,6 +236,8 @@ const toggle_mobile = () => {
 
 .navbar-mobile > ul > li {
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar-mobile a:hover:before,

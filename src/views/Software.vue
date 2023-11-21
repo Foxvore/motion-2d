@@ -13,11 +13,11 @@ onMounted(() => {
     <HalfHeader title="Software" subtitle="for Making Motion 2D" />
   </section>
 
-  <section id="software-library" class="px-[120px] py-[50px] h-auto">
+  <section id="software-library" class="px-[10vw] py-[8vh] h-auto">
     <SoftwareLibrary />
   </section>
 
-  <div class="px-[70px]">
+  <div class="px-[5vw]">
     <hr />
   </div>
 </template>

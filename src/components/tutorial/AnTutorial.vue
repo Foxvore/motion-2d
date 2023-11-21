@@ -101,13 +101,11 @@ const openYt = (link) => {
     <el-card
       v-for="item in tutorial_an"
       :key="item"
-      class="el-card mx-2 my-2 inline-block w-[380px]"
+      class="el-card mx-2 my-2 inline-block"
     >
       <div class="flex justify-center">
         <iframe
-          class="rounded-md"
-          width="340"
-          height="190"
+          class="rounded-md aspect-video w-full"
           :src="item.embed_link"
           title="YouTube video player"
           frameborder="0"
@@ -153,6 +151,11 @@ const openYt = (link) => {
 </template>
 
 <style scoped>
+.el-card {
+  width: 23vw;
+  height: 32rem;
+}
+
 .el-card:hover {
   scale: 1.015;
 }
@@ -179,5 +182,28 @@ const openYt = (link) => {
     var(--quaternary-color)
   );
   border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .text-4xl {
+    font-size: 1.8rem;
+  }
+
+  .el-card {
+    width: 70vw;
+    height: 30rem;
+  }
+
+  i.text-lg {
+    font-size: 1rem;
+  }
+
+  .text-xs {
+    font-size: 0.65rem;
+  }
+
+  .text-base {
+    font-size: 0.85rem;
+  }
 }
 </style>

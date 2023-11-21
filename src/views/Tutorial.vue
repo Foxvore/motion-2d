@@ -14,19 +14,19 @@ onMounted(() => {
     <HalfHeader title="Tutorial" subtitle="for Making Motion 2D" />
   </section>
 
-  <section id="our-team" class="px-[120px] py-[50px] h-auto">
+  <section id="our-team" class="px-[10vw] py-[5vh] h-auto">
     <AeTutorial />
   </section>
 
-  <div class="px-[70px]">
+  <div class="px-[5vw]">
     <hr />
   </div>
 
-  <section id="our-team" class="px-[120px] py-[50px] h-auto">
+  <section id="our-team" class="px-[10vw] py-[5vh] h-auto">
     <AnTutorial />
   </section>
 
-  <div class="px-[70px]">
+  <div class="px-[5vw]">
     <hr />
   </div>
 </template>

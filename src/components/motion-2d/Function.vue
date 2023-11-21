@@ -9,13 +9,11 @@
     </p>
   </div>
 
-  <div class="grid grid-cols-3">
+  <div class="product-grid">
     <div>
       <el-card class="function-card mx-2">
         <iframe
-          width="430.22"
-          height="243"
-          class="rounded-md mb-3"
+          class="rounded-md aspect-video w-full mb-3"
           src="https://www.youtube.com/embed/D1LM0L0l_kE?si=fRVEQFueJEDZJYRw"
           title="YouTube video player"
           frameborder="0"
@@ -31,9 +29,7 @@
     <div>
       <el-card class="function-card mx-2">
         <iframe
-          width="430.22"
-          height="243"
-          class="rounded-md mb-3"
+          class="rounded-md aspect-video w-full mb-3"
           src="https://www.youtube.com/embed/LFrsB3Gkiok?si=QxSdZH0iInn85-qw"
           title="YouTube video player"
           frameborder="0"
@@ -49,9 +45,7 @@
     <div>
       <el-card class="function-card mx-2">
         <iframe
-          width="430.22"
-          height="243"
-          class="rounded-md mb-3"
+          class="rounded-md aspect-video w-full mb-3"
           src="https://www.youtube.com/embed/G3TOTat8wbQ?si=zxwI9rAQHpXJ4dPy"
           title="YouTube video player"
           frameborder="0"
@@ -68,6 +62,12 @@
 </template>
 
 <style scoped>
+.product-grid {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
 .function-card:hover {
   scale: 1.02;
 }

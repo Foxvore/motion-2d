@@ -63,10 +63,10 @@ const transisi = [
     Jenis-jenis Transformasi Transisi
   </p>
 
-  <div class="grid grid-flow-row grid-cols-3">
-    <el-card v-for="item in transisi" :key="item" class="transition-card m-2">
+  <div class="product-grid">
+    <el-card v-for="item in transisi" :key="item" class="transition-card">
       <div
-        class="w-full h-[250px] rounded-md mb-3 flex justify-center items-center"
+        class="w-full h-full rounded-md mb-3 flex justify-center items-center"
       >
         <img :src="item.example" alt="transisi_example" class="rounded-md" />
       </div>
@@ -77,7 +77,19 @@ const transisi = [
 </template>
 
 <style scoped>
+.product-grid {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .transition-card:hover {
   scale: 1.02;
+}
+
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
 }
 </style>

@@ -41,8 +41,8 @@ const openWeb = (link) => {
 </script>
 
 <template>
-  <div class="grid grid-flow-row grid-cols-2">
-    <el-card v-for="item in software" :key="item" class="el-card h-full m-3">
+  <div class="product-grid">
+    <el-card v-for="item in software" :key="item" class="el-card h-full">
       <div class="flex justify-center">
         <div>
           <div class="mb-5 text-center">
@@ -50,7 +50,7 @@ const openWeb = (link) => {
             <p class="text-gray-400 text-sm">{{ item.inc }}</p>
           </div>
           <div class="mb-5 flex justify-center">
-            <img :src="item.logo" alt="Adobe Illustrator" class="w-[300px]" />
+            <img :src="item.logo" alt="Adobe Illustrator" class="icon" />
           </div>
           <div class="mb-5 text-center">
             <p class="text-gray-500 text-sm mb-1">
@@ -110,8 +110,18 @@ const openWeb = (link) => {
 </template>
 
 <style scoped>
+.product-grid {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
 .el-card:hover {
   scale: 1.03;
+}
+
+.icon {
+  width: 25rem;
 }
 
 .link {
@@ -120,5 +130,15 @@ const openWeb = (link) => {
 
 .link:hover {
   color: var(--secondary-color);
+}
+
+@media (max-width: 600px) {
+  .icon {
+    width: 10rem;
+  }
+
+  .text-sm {
+    font-size: 0.7rem;
+  }
 }
 </style>
