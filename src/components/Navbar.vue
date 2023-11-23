@@ -24,6 +24,7 @@ const scroll = () => {
 };
 
 const toggle_mobile = () => {
+  document.documentElement.scrollTop = 0;
   const navbar = document.querySelector("#navbar");
   navbar.classList.toggle("navbar-mobile");
 
