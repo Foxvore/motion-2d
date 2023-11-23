@@ -1,10 +1,10 @@
 <script setup></script>
 
 <template>
-  <div class="grid grid-cols-3">
+  <p class="title text-4xl mb-3">What is Motion 2D?</p>
+  <div class="product-grid">
     <div class="col-span-2 flex items-center">
       <div>
-        <p class="title text-4xl mb-5">What is Motion 2D?</p>
         <p class="mb-3 text-justify">
           Motion 2D merupakan cabang ilmu desain grafis yang dapat menggabungkan
           teks, warna, grafik, dan gerakan untuk memberikan kehidupan dan
@@ -18,22 +18,60 @@
           permainan, dan efek visual dalam film atau video dan masih banyak
           lagi.
         </p>
-        <router-link :to="{ name: 'Motion 2D' }">
-          <button class="learn-more mt-5 !w-[21rem]">
-            <span class="circle" aria-hidden="true">
-              <span class="icon arrow"></span>
-            </span>
-            <span class="button-text">Baca materi selengkapnya</span>
-          </button>
-        </router-link>
+        <div class="btn-more">
+          <router-link :to="{ name: 'Motion 2D' }">
+            <button class="learn-more mt-5 !w-[21rem]">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Baca materi selengkapnya</span>
+            </button>
+          </router-link>
+        </div>
       </div>
     </div>
-    <div class="flex justify-center items-center">
+    <div class="flex justify-center items-center ol">
       <img
         src="@/assets/gif/homepage/definition.gif"
         alt="def.giv"
-        class="w-[300px] h-[300px]"
+        class="gif"
       />
     </div>
   </div>
 </template>
+
+<style scoped>
+.product-grid {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gif {
+  width: 250px;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .title {
+    text-align: center !important;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .gif {
+    width: 180px;
+    height: auto;
+  }
+
+  .ol {
+    order: -99999;
+  }
+
+  .btn-more {
+    display: none;
+  }
+}
+</style>

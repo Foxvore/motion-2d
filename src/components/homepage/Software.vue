@@ -45,7 +45,7 @@ const openWeb = (link) => {
     <p class="title text-4xl mb-10">Software</p>
   </div>
 
-  <div class="grid grid-flow-row grid-cols-2">
+  <div class="product-grid">
     <el-card v-for="item in software" :key="item" class="el-card h-full m-3">
       <div class="flex justify-center">
         <div>
@@ -54,7 +54,11 @@ const openWeb = (link) => {
             <p class="text-gray-400 text-sm">{{ item.inc }}</p>
           </div>
           <div class="mb-5 flex justify-center">
-            <img :src="item.logo" alt="Adobe Illustrator" class="w-[300px]" />
+            <img
+              :src="item.logo"
+              alt="Adobe Illustrator"
+              class="icon w-[300px]"
+            />
           </div>
           <div class="text-center">
             <p class="text-gray-500 text-sm mb-1">
@@ -69,7 +73,7 @@ const openWeb = (link) => {
     </el-card>
   </div>
 
-  <div class="flex justify-center py-1 mt-5">
+  <div class="flex justify-center py-1 mt-5 btn-more">
     <router-link :to="{ name: 'Software' }">
       <button class="learn-more mt-5 !w-[17rem]">
         <span class="circle" aria-hidden="true">
@@ -82,8 +86,18 @@ const openWeb = (link) => {
 </template>
 
 <style scoped>
+.product-grid {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
 .el-card:hover {
   scale: 1.03;
+}
+
+.icon {
+  width: 25rem;
 }
 
 .link {
@@ -92,5 +106,23 @@ const openWeb = (link) => {
 
 .link:hover {
   color: var(--secondary-color);
+}
+
+@media (max-width: 600px) {
+  .icon {
+    width: 10rem;
+  }
+
+  .text-sm {
+    font-size: 0.7rem;
+  }
+
+  .el-card:hover {
+    scale: 1;
+  }
+
+  .btn-more {
+    display: none;
+  }
 }
 </style>

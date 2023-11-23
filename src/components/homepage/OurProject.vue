@@ -1,10 +1,10 @@
 <script setup></script>
 
 <template>
-  <div class="grid grid-cols-2">
-    <div class="flex items-center">
-      <div class="flex justify-start items-center pr-32">
-        <div class="card" style="--rating: 90">
+  <div class="product-grid">
+    <div class="flex items-center ol">
+      <div class="flex justify-start items-center">
+        <div class="card" style="">
           <img
             src="@/assets/img/project/vid_thumbnail.png"
             alt=""
@@ -22,26 +22,35 @@
           <b class="text-[var(--primary-color)]">Tri'sta.</b> Video ini berisi
           tentang penjelasan, fungsi, dan contoh penggunaan dari Motion 2D.
         </p>
-        <router-link :to="{ name: 'Our Project' }">
-          <button class="learn-more mt-5 !w-[14rem]">
-            <span class="circle" aria-hidden="true">
-              <span class="icon arrow"></span>
-            </span>
-            <span class="button-text">Tonton video</span>
-          </button>
-        </router-link>
+        <div class="btn-more">
+          <router-link :to="{ name: 'Our Project' }">
+            <button class="learn-more mt-5 !w-[14rem]">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Tonton video</span>
+            </button>
+          </router-link>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
+.product-grid {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .card {
-  width: auto;
+  width: 100%;
   height: auto;
   background: var(--quaternary-color);
   border: 1px solid var(--cardBorder);
   padding: 7px;
+  margin-right: 50px;
   box-shadow: 8px 8px 0 var(--secondary-color);
   transition: box-shadow 0.5s, transform 0.5s;
   border-radius: 8px;
@@ -51,5 +60,33 @@
 .card:hover {
   transform: translate(-2px, -4px);
   box-shadow: 16px 16px 0 var(--tertiary-color);
+}
+
+@media (max-width: 600px) {
+  .title {
+    text-align: center !important;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .card {
+    margin-right: 0;
+    margin-top: 15px;
+  }
+
+  .ol {
+    order: 99999;
+  }
+
+  .btn-more {
+    display: none;
+  }
+
+  .card:hover {
+    transform: none;
+    box-shadow: 8px 8px 0 var(--secondary-color);
+  }
 }
 </style>

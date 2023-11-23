@@ -15,27 +15,27 @@ onMounted(() => {
     <HalfHeader title="What is Motion 2D?" subtitle="Definition & Function" />
   </section>
 
-  <section id="definition" class="px-[10vw] py-[5vh] h-auto">
+  <section id="definition" class="px-[10vw] py-[8vh] h-auto">
     <Definition />
   </section>
 
-  <div class="px-[5vh]">
+  <div class="px-[5vw]">
     <hr />
   </div>
 
-  <section id="function" class="px-[10vw] py-[5vh] h-auto">
+  <section id="function" class="px-[10vw] py-[8vh] h-auto">
     <Function />
   </section>
 
-  <div class="px-[5vh]">
+  <div class="px-[5vw]">
     <hr />
   </div>
 
-  <section id="transition" class="px-[10vw] py-[5vh] h-auto">
+  <section id="transition" class="px-[10vw] py-[8vh] h-auto">
     <Transisi />
   </section>
 
-  <div class="px-[5vh]">
+  <div class="px-[5vw]">
     <hr />
   </div>
 </template>

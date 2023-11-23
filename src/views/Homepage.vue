@@ -16,35 +16,35 @@ onMounted(() => {
     <Header />
   </section>
 
-  <section id="definition" class="py-[50px] px-[120px] h-auto">
+  <section id="definition" class="px-[10vw] py-[8vh] h-auto">
     <Definition />
   </section>
 
-  <div class="px-[70px]">
+  <div class="px-[5vw]">
     <hr />
   </div>
 
-  <section id="software" class="py-[50px] px-[120px] h-auto">
+  <section id="software" class="px-[10vw] py-[8vh] h-auto">
     <Software />
   </section>
 
-  <div class="px-[70px]">
+  <div class="px-[5vw]">
     <hr />
   </div>
 
-  <section id="tutorial" class="py-[50px] px-[120px] h-auto">
+  <section id="tutorial" class="px-[10vw] py-[8vh] h-auto">
     <Tutorial />
   </section>
 
-  <div class="px-[70px]">
+  <div class="px-[5vw]">
     <hr />
   </div>
 
-  <section id="tutorial" class="py-[50px] px-[120px] h-auto">
+  <section id="tutorial" class="px-[10vw] py-[8vh] h-auto">
     <OurProject />
   </section>
 
-  <div class="px-[70px]">
+  <div class="px-[5vw]">
     <hr />
   </div>
 </template>
