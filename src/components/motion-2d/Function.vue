@@ -71,4 +71,10 @@
 .function-card:hover {
   scale: 1.02;
 }
+
+@media (max-width: 600px) {
+  .function-card:hover {
+    scale: 1;
+  }
+}
 </style>

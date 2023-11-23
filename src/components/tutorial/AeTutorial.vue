@@ -171,5 +171,9 @@ const openYt = (link) => {
   .text-base {
     font-size: 0.85rem;
   }
+
+  .el-card:hover {
+    scale: 1;
+  }
 }
 </style>

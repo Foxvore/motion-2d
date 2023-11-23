@@ -140,5 +140,9 @@ const openWeb = (link) => {
   .text-sm {
     font-size: 0.7rem;
   }
+
+  .el-card:hover {
+    scale: 1;
+  }
 }
 </style>
