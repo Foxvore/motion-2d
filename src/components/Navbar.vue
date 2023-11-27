@@ -28,14 +28,16 @@ const toggle_mobile = () => {
   const navbar = document.querySelector("#navbar");
   navbar.classList.toggle("navbar-mobile");
 
-  const icon = document.querySelector(".mobile-nav-toggle");
-  icon.classList.toggle("fa-bars");
-  icon.classList.toggle("fa-x");
+  if (navbar.classList.contains("navbar-mobile")) {
+    const icon = document.querySelector(".mobile-nav-toggle");
+    icon.classList.toggle("fa-bars");
+    icon.classList.toggle("fa-x");
+  }
 };
 
-const mobile_nav = () => {
-  document.documentElement.scrollTop = 0;
-};
+// const toggle_mobile = () => {
+//   document.documentElement.scrollTop = 0;
+// };
 </script>
 
 <template>
@@ -46,35 +48,35 @@ const mobile_nav = () => {
       <nav id="navbar" class="navbar">
         <ul class="text-lg">
           <li>
-            <button class="btn-router" @click="mobile_nav">
+            <button class="btn-router" @click="toggle_mobile">
               <router-link class="tracking-wider" :to="{ name: 'Homepage' }">
                 Homepage
               </router-link>
             </button>
           </li>
           <li>
-            <button class="btn-router" @click="mobile_nav">
+            <button class="btn-router" @click="toggle_mobile">
               <router-link class="tracking-wider" :to="{ name: 'Motion 2D' }">
                 What is Motion 2D?
               </router-link>
             </button>
           </li>
           <li>
-            <button class="btn-router" @click="mobile_nav">
+            <button class="btn-router" @click="toggle_mobile">
               <router-link class="tracking-wider" :to="{ name: 'Software' }">
                 Software
               </router-link>
             </button>
           </li>
           <li>
-            <button class="btn-router" @click="mobile_nav">
+            <button class="btn-router" @click="toggle_mobile">
               <router-link class="tracking-wider" :to="{ name: 'Tutorial' }">
                 Tutorial
               </router-link>
             </button>
           </li>
           <li>
-            <button class="btn-router" @click="mobile_nav">
+            <button class="btn-router" @click="toggle_mobile">
               <router-link class="tracking-wider" :to="{ name: 'Our Project' }">
                 Our Project
               </router-link>
