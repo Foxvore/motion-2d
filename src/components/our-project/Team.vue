@@ -69,35 +69,41 @@ const team_data = [
 </script>
 
 <template>
+  <p class="title text-4xl mb-8 text-center">Our Team</p>
+
   <div id="our-team">
-    <el-carousel :interval="5000" type="card" height="425px">
-      <el-carousel-item v-for="item in team_data" :key="item">
-        <div class="card">
-          <button class="mail"></button>
-          <div class="profile-pic">
-            <img :src="item.picture" alt="" />
+    <div class="product-grid">
+      <div class="card" v-for="item in team_data" :key="item">
+        <button class="mail"></button>
+        <div class="profile-pic">
+          <img :src="item.picture" alt="" />
+        </div>
+        <div class="bottom">
+          <div class="content">
+            <span class="name">{{ item.name }}</span>
+            <span class="about-me">NIM : {{ item.nim }} </span>
+            <span class="about-me">{{ item.job }}</span>
           </div>
-          <div class="bottom">
-            <div class="content">
-              <span class="name">{{ item.name }}</span>
-              <span class="about-me">NIM : {{ item.nim }} </span>
-              <span class="about-me">{{ item.job }}</span>
+          <div class="bottom-bottom">
+            <div class="social-links-container text-xl">
+              <!-- <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-github"></i> -->
             </div>
-            <div class="bottom-bottom">
-              <div class="social-links-container text-xl">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-github"></i>
-              </div>
-              <button class="button">{{ item.role }}</button>
-            </div>
+            <button class="button">{{ item.role }}</button>
           </div>
         </div>
-      </el-carousel-item>
-    </el-carousel>
+      </div>
+    </div>
   </div>
 </template>
 
 <style scoped>
+.product-grid {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .card {
   width: 280px;
   height: 280px;
@@ -248,5 +254,11 @@ const team_data = [
 .card:hover .profile-pic img {
   transform: scale(2);
   transition: all 0.5s ease-in-out 0.5s;
+}
+
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
 }
 </style>
