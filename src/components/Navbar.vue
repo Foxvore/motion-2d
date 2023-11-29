@@ -28,16 +28,22 @@ const toggle_mobile = () => {
   const navbar = document.querySelector("#navbar");
   navbar.classList.toggle("navbar-mobile");
 
-  if (navbar.classList.contains("navbar-mobile")) {
+  const icon = document.querySelector(".mobile-nav-toggle");
+  icon.classList.toggle("fa-bars");
+  icon.classList.toggle("fa-x");
+};
+
+const mobile_mode = () => {
+  const w = window.innerWidth;
+  if (w < 600) {
+    const navbar = document.querySelector("#navbar");
+    navbar.classList.toggle("navbar-mobile");
+
     const icon = document.querySelector(".mobile-nav-toggle");
     icon.classList.toggle("fa-bars");
     icon.classList.toggle("fa-x");
   }
 };
-
-// const toggle_mobile = () => {
-//   document.documentElement.scrollTop = 0;
-// };
 </script>
 
 <template>
@@ -48,35 +54,35 @@ const toggle_mobile = () => {
       <nav id="navbar" class="navbar">
         <ul class="text-lg">
           <li>
-            <button class="btn-router" @click="toggle_mobile">
+            <button class="btn-router" @click="mobile_mode">
               <router-link class="tracking-wider" :to="{ name: 'Homepage' }">
                 Homepage
               </router-link>
             </button>
           </li>
           <li>
-            <button class="btn-router" @click="toggle_mobile">
+            <button class="btn-router" @click="mobile_mode">
               <router-link class="tracking-wider" :to="{ name: 'Motion 2D' }">
                 What is Motion 2D?
               </router-link>
             </button>
           </li>
           <li>
-            <button class="btn-router" @click="toggle_mobile">
+            <button class="btn-router" @click="mobile_mode">
               <router-link class="tracking-wider" :to="{ name: 'Software' }">
                 Software
               </router-link>
             </button>
           </li>
           <li>
-            <button class="btn-router" @click="toggle_mobile">
+            <button class="btn-router" @click="mobile_mode">
               <router-link class="tracking-wider" :to="{ name: 'Tutorial' }">
                 Tutorial
               </router-link>
             </button>
           </li>
           <li>
-            <button class="btn-router" @click="toggle_mobile">
+            <button class="btn-router" @click="mobile_mode">
               <router-link class="tracking-wider" :to="{ name: 'Our Project' }">
                 Our Project
               </router-link>
