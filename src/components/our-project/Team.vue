@@ -145,6 +145,7 @@ const team_data = [
   left: 3px;
   right: 3px;
   background: var(--secondary-color);
+  border: 2px solid black;
   top: 80%;
   border-radius: 29px;
   z-index: 2;
@@ -177,12 +178,12 @@ const team_data = [
 
 .card .bottom .bottom-bottom {
   position: absolute;
-  bottom: 1rem;
+  bottom: 0.62rem;
   left: 1.5rem;
   right: 1.5rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .card .bottom .bottom-bottom .social-links-container {
@@ -204,9 +205,10 @@ const team_data = [
 
 .card .bottom .bottom-bottom .button {
   background: white;
+  width: 100%;
   color: var(--primary-color);
   font-weight: 600;
-  border: none;
+  border: 2px solid black;
   border-radius: 20px;
   font-size: 0.6rem;
   padding: 0.4rem 0.6rem;
