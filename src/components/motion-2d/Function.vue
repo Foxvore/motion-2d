@@ -12,14 +12,19 @@
   <div class="product-grid">
     <div>
       <el-card class="function-card mx-2">
-        <iframe
+        <img
+          src="@/assets/gif/function/iklan.gif"
+          alt="gif_iklan"
+          class="rounded-md aspect-video w-full mb-3"
+        />
+        <!-- <iframe
           class="rounded-md aspect-video w-full mb-3"
           src="https://www.youtube.com/embed/D1LM0L0l_kE?si=fRVEQFueJEDZJYRw"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
-        />
+        /> -->
         <div class="text-center">
           <p class="title text-2xl">Iklan</p>
           <p class="text-sm text-gray-500">src : Oreo Asia</p>
@@ -28,30 +33,40 @@
     </div>
     <div>
       <el-card class="function-card mx-2">
-        <iframe
+        <img
+          src="@/assets/gif/function/game.gif"
+          alt="gif_game"
+          class="rounded-md aspect-video w-full mb-3"
+        />
+        <!-- <iframe
           class="rounded-md aspect-video w-full mb-3"
           src="https://www.youtube.com/embed/LFrsB3Gkiok?si=QxSdZH0iInn85-qw"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
-        />
+        /> -->
         <div class="text-center">
           <p class="title text-2xl">Game</p>
-          <p class="text-sm text-gray-500">src : ShergiokYT</p>
+          <p class="text-sm text-gray-500">src : Niftski</p>
         </div>
       </el-card>
     </div>
     <div>
       <el-card class="function-card mx-2">
-        <iframe
+        <img
+          src="@/assets/gif/function/animasi.gif"
+          alt="gif_animasi"
+          class="rounded-md aspect-video w-full mb-3"
+        />
+        <!-- <iframe
           class="rounded-md aspect-video w-full mb-3"
           src="https://www.youtube.com/embed/G3TOTat8wbQ?si=zxwI9rAQHpXJ4dPy"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
-        />
+        /> -->
         <div class="text-center">
           <p class="title text-2xl">Film/Video</p>
           <p class="text-sm text-gray-500">src : Toon Television</p>
