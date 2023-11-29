@@ -71,7 +71,7 @@ const team_data = [
 <template>
   <p class="title text-4xl mb-8 text-center">Our Team</p>
 
-  <div id="our-team">
+  <div id="our-team" class="flex justify-center">
     <div class="product-grid">
       <div class="card" v-for="item in team_data" :key="item">
         <button class="mail"></button>
@@ -100,7 +100,7 @@ const team_data = [
 <style scoped>
 .product-grid {
   display: grid;
-  gap: 1.2rem;
+  gap: 2rem;
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
