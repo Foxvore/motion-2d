@@ -1,11 +1,11 @@
 <script setup>
 const openYT = () => {
-  window.open("https://youtu.be/Tbo-ivOuBU0?si=s-Fhq8UDX3nG3RTw");
+  window.open("https://youtu.be/adGmYOCRcrU?si=PJFaM7BerU6AGkVZ");
 };
 
 const openPPT = () => {
   window.open(
-    "https://docs.google.com/presentation/d/1kV0fpSiTAkEIkBXgdWfj4fS949MW5xrc/edit?usp=drive_link&ouid=101544503794689559568&rtpof=true&sd=true"
+    "https://docs.google.com/presentation/d/13JkLvvNnGQVcF960A_ZWoNKyk_XwVnsz/edit?usp=drive_link&ouid=101544503794689559568&rtpof=true&sd=true"
   );
 };
 </script>
@@ -20,7 +20,7 @@ const openPPT = () => {
           <div class="card-image">
             <iframe
               class="rounded-md aspect-video w-full"
-              src="https://www.youtube.com/embed/Tbo-ivOuBU0?si=-PAybRnHp-bWZQO-"
+              src="https://www.youtube.com/embed/adGmYOCRcrU?si=L072qyeGYzuG_Mf0"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -39,9 +39,9 @@ const openPPT = () => {
             </button>
           </div>
           <div class="heading">
-            What is Motion 2D?
+            What is Motion 2D? - Tri'sta Motion 2D
             <div class="author">
-              By <span class="name">Tri'sta</span> - 27 September 2023
+              By <span class="name">Tri'sta</span> - 4 Desember 2023
             </div>
           </div>
         </div>
@@ -66,9 +66,10 @@ const openPPT = () => {
             </button>
           </div>
           <div class="heading">
-            What is Motion 2D?
+            Motion 2D Presetation
             <div class="author">
-              By <span class="name">Tri'sta</span> - 27 September 2023
+              By <span class="name">Tri'sta</span> - 4 Desember 2023 (Download
+              the file is recomended)
             </div>
           </div>
         </div>
