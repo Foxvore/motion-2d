@@ -4,7 +4,7 @@
   <div class="product-grid">
     <div class="flex items-center ol">
       <div class="flex justify-start items-center">
-        <div class="card" style="">
+        <div class="card aspect-video" style="">
           <img
             src="@/assets/img/project/vid_thumbnail.png"
             alt=""
