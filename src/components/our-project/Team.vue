@@ -100,7 +100,7 @@ const team_data = [
 <style scoped>
 .product-grid {
   display: grid;
-  gap: 2rem;
+  gap: 2.5rem;
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
